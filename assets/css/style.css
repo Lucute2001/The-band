@@ -253,7 +253,7 @@ html {
 }
 
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 
@@ -308,8 +308,8 @@ html {
 
 /* Places */
 .places-list {
-    margin-top: 32px;
-    margin-bottom: 48px;
+    margin-top: 16x;
+    /* margin-bottom: 48px; */
 }
 
 
