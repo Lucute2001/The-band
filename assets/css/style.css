@@ -91,7 +91,6 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
 }
 
 
@@ -157,20 +156,30 @@ html {
     line-height: 38px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
+
 }
 
 #header .search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
-#header .mobile-menu-btn:hover{
+
+#header .mobile-menu-btn:hover {
     background-color: #ccc;
 }
-#header .mobile-menu-btn:hover .menu-icon{
+
+#header .mobile-menu-btn:hover .menu-icon {
     color: #000;
 }
 

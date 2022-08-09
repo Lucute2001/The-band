@@ -43,8 +43,15 @@ mobileMenu.onclick = () => {
 
 // Tự động đóng khi chọn menu
 var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+
 menuItems.forEach((menuItem) => {
-    menuItem.onclick = () => {
-        header.style.height = null;
+    menuItem.onclick = function (event) {
+        let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+        if (isParentMenu) {
+            event.preventDefault();
+        } else {
+            header.style.height = null;
+        }
     }
+
 })
