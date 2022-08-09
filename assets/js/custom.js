@@ -24,3 +24,27 @@ modal.addEventListener('click', hideBuyTickets);
 modalContainer.addEventListener('click', (e) => {
     e.stopPropagation();
 })
+
+
+
+var header = document.getElementById('header');
+var mobileMenu = document.getElementById('mobile-menu');
+var headerHeight = header.clientHeight;
+
+// Đóng mở mobile menu
+mobileMenu.onclick = () => {
+    var isClose = header.clientHeight === headerHeight;
+    if (isClose) {
+        header.style.height = 'auto';
+    } else {
+        header.style.height = null;
+    }
+}
+
+// Tự động đóng khi chọn menu
+var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+menuItems.forEach((menuItem) => {
+    menuItem.onclick = () => {
+        header.style.height = null;
+    }
+})
