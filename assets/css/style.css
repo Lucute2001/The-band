@@ -64,6 +64,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .btn {
     color: #fff;
     background-color: #000;
